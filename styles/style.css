@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+/* 
+    font-family: 'Roboto', sans-serif;
+    100, 400
+*/
+:root {
+    --Dark-Blue: hsl(228, 34%, 14%);
+    --White: hsl(0, 0%, 100%);
+    --Teal: hsl(178, 65%, 39%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--Dark-Blue);
+    font-family: 'Roboto', sans-serif;
+}
+main {
+    min-height: 100vh;
+}
+/* Body */
+.top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 5rem;
+}
+hr {
+    border: 1px solid var(--Teal);
+    border-radius: 5rem;
+    width: 5%;
+    margin: 0 .7rem 0 .7rem;
+}
+.txtName {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--White);
+}
+.txtName  span {
+    text-decoration: line-through;
+    color: #FF597B;
+    font-size: 1.5rem;
+}
+
+.txtHeading{
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 400;
+    color: var(--White);
+    position: relative;
+    top: 10rem;
+}
+
+.socialIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    top: 13rem;
+    color: var(--White);
+}
+.fa-brands {
+    border: 2px solid var(--White);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 0 .5rem;
+    transition: .5s;
+}
+.fa-brands:hover {
+    cursor: pointer;
+    transform: translateY(-0.5rem);
+    border-color: var(--Teal);
+}
+.socialLink {
+    text-decoration: none;
+    color: var(--White);
+}
+
+/* Footer */
+.footer > p {
+    position: relative;
+    font-size: .8rem;
+    color: var(--White);
+    text-align: center;
+    bottom: 2rem;
+}
+.name {
+    font-size: 1rem;
+    color: var(--Teal);
+    font-weight: bolder;
+}
+.fa-brain {
+    color: var(--Teal);
+    font-size: 1rem;
+}
